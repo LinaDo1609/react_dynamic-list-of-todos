@@ -47,7 +47,7 @@ export const App: React.FC = () => {
 
       if (category === 'active') {
         setTodos(
-          todos.filter(
+          items.filter(
             todo =>
               todo.completed === false &&
               todo.title.toLocaleLowerCase().includes(inputCase),
@@ -57,7 +57,7 @@ export const App: React.FC = () => {
 
       if (category === 'completed') {
         setTodos(
-          todos.filter(
+          items.filter(
             todo =>
               todo.completed === true &&
               todo.title.toLocaleLowerCase().includes(inputCase),
